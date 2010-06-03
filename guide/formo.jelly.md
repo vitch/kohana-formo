@@ -20,7 +20,7 @@ The following example will pull an entire model and create a form from it:
 	{
 		try
 		{
-			$user-save();
+			$user->save();
 		}
 		catch (Validate_Exception $e)
 		{
@@ -75,7 +75,7 @@ Here's an example of working with a user record using this approach:
 			// Data is validated at save
 			$user->save();
 		}
-		catch(Validate_Exception $e)
+		catch(Validator_Exception $e)
 		{
 			// Do something with $e
 		}
